@@ -1,0 +1,126 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.logo > img {
+  width: 50px;
+}
+
+header {
+  text-align: center;
+}
+
+header > h1 {
+  margin: 5px;
+}
+
+.navbar {
+  background-color: #565656;
+  color: white;
+}
+
+.hamburger {
+  text-align: right;
+}
+
+.menu {
+  display: none;
+}
+
+main {
+  margin-top: 10px;
+}
+
+.product {
+  border: 1px solid #ececec;
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.fa-apple-alt, .fa-money-bill-wave, .fa-utensils {
+  padding-top: 5px;
+}
+
+.product > p {
+  text-align: left;
+  padding-left: 5px;
+}
+
+footer {
+  text-align: center;
+  border-top: 3px solid #ececec;
+}
+
+.social {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.social_icon {
+  margin: 10px;
+}
+
+@media screen and (min-width: 481px) {
+  header {
+    display: flex;
+    margin: 15px;
+  }
+  .logo {
+    display: block;
+    width: 35%;
+  }
+  .product {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  .social {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .logo {
+    width: 41%;
+  }
+  .hamburger {
+    display: none;
+  }
+  .menu {
+    list-style-type: none;
+    margin: 15px;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .menu > li {
+    padding: 15px;
+  }
+  main {
+    margin-bottom: 10px;
+    padding-left: 17.5px;
+    padding-right: 17.5px;
+    display: flex;
+  }
+  .product {
+    margin-left: 17.5px;
+    margin-right: 17.5px;
+  }
+  .fa-twitter {
+    padding-left: 50px;
+  }
+  .fa-facebook {
+    padding-left: 100px;
+  }
+  .social-icon {
+    margin: 0;
+  }
+}
